@@ -1,0 +1,49 @@
+<!doctype html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  
+   <style amp-custom>
+   header{
+     background: black;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+   }
+   .logo{
+     font-size: 30px;
+   }
+   .btn-1{
+     font-size: 30px;
+   }
+   </style>
+ 
+</head>
+<body>
+
+  <header>
+    <div class="logo">My Logo</div>
+    <div class="btn-1" role="button" tabindex="0" on="tap:side-bar.open">☰</div>
+  </header>
+  
+  <amp-sidebar id="side-bar" layout="nodisplay" style="width: 100%">
+    <div style="text-align: right; margin-right: 20px; padding: 20px 50px; font-size: 30px;" role="button" tabindex="0" on="tap:side-bar.close">x</div>
+    <nav style="padding: 20px 50px; list-style: none;">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </nav>
+  </amp-sidebar>
+
+</body>
+</html>
